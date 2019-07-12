@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    background-color: cyan;
+    margin: 0 1em 0 1em;
+}
+
+p {
+    text-align: justify;
+}
+
+form {
+    background-color: #FFAC40;
+    display: grid;
+    padding-top: 1em;
+    border-radius: 0.5em;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+form * {
+    width: 95%;
+}
+
+form label{
+    margin-top: 0.25em;
+}
+
+label {
+    text-align: right;
+    padding-right: 0.5em;
+    padding-bottom: 0.25em;
+}
+
+fieldset{
+    border: none;
+}
+
+.options{
+    display: grid;
+    border-radius: 0.5em;
+    justify-items: center;
+    grid-template-columns: 2em 10em;
+}
+
+.options label{
+    text-align: left;
+    padding: 2px 0 0 0;
+}
+
+.options input{
+    margin: 0.85em 0 0 2px;
+}
+
+textarea {
+    border: none;
+    margin: 0.25em;
+    border-radius: 0.5em;
+    height: 6em;
+    resize: none;
+}
+
+input {
+    resize: none;
+    margin: 0.35em;
+    border-radius: 0.5em;
+}
+
+select {
+    justify-content: center;
+    margin: 0.25em auto 0.25em auto;
+    width: 95.75%;
+}
+
+button {
+    margin: 2em 3em 2em auto;
+    width: 8em;
+    height: 4em;
+    grid-column: 2 / 3;
+    border-radius: 0.5em;
+}

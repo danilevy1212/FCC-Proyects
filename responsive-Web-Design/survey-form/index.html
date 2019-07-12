@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Form title!</h1>
+        <p id="description">This paragraph all about the form, what is it about and why the participant should participate. It also explains how long it will take to do and what will be done with the data send, plus any other concerns that the user could have.</p>
+        <form id="survey-form" action="#">
+            <label id="name-label" for="name">Name: </label>
+            <input type="textfield" id="name" name="name" value="" placeholder="Insert name" required/>
+            <label id="email-label" for="email">Email: </label>
+            <input type="email" id="email" email="email" value="" placeholder="Insert email" required/>
+            <label id="number-label" for="number">Number: </label>
+            <input type="number" id="number" min="1" max="5" placeholder="Insert number">
+            <label id ="dropdown-label" for="dropdown">Select option: </label>
+            <select id="dropdown">
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+                <option value="four">four</option>
+            </select>
+            <label for="radiobuttons">Radio buttons: </label>
+            <fieldset>
+                <div id="radiobuttons" class="options">
+                    <input id="one" type="radio" name="items" value="one">
+                    <label for="one">Choice One</label>
+                    <input id="two" type="radio" name="items" value="two">
+                    <label for="two">Choice Two</label>
+                    <input id="three" type="radio" name="items" value="three">
+                    <label for="three">Choice Three</label>
+                </div>
+            </fieldset>
+            <label id="" for="">Check boxes:</label>
+            <fieldset>
+                <div id="checkboxes" class="options">
+                    <input id="cone" type="checkbox" name="citems" value="one">
+                    <label for="one">Choice One</label>
+                    <input id="ctwo" type="checkbox" name="citems" value="two">
+                    <label for="two">Choice Two</label>
+                    <input id="cthree" type="checkbox" name="citems" value="three">
+                    <label for="three">Choice Three</label>
+                </div>
+            </fieldset>
+            <label id="" for="">Additional comments: </label>
+            <textarea name="" id="" rows="" cols="" tabindex=""></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
