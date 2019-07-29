@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1 id="title">Form title!</h1>
@@ -14,12 +15,16 @@
             <label id="number-label" for="number">Number: </label>
             <input type="number" id="number" min="1" max="5" placeholder="Insert number">
             <label id ="dropdown-label" for="dropdown">Select option: </label>
-            <select id="dropdown">
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-                <option value="four">four</option>
-            </select>
+            <div class="dropdown">
+                <select id="dropdown">
+                    <div class="drop-opt">
+                        <option value="one">one</option>
+                        <option value="two">two</option>
+                        <option value="three">three</option>
+                        <option value="four">four</option>
+                    </div>
+                </select>
+            </div>
             <label for="radiobuttons">Radio buttons: </label>
             <fieldset>
                 <div id="radiobuttons" class="options">
