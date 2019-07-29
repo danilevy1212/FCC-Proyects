@@ -1,0 +1,166 @@
+html,
+body {
+    font-family: Consolas,monaco,monospace;
+    font-size: 21px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.upper-navbar {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-elem {
+    display: inline;
+    text-align: center;
+    margin: auto 0.25em auto 0.25em;
+    position: relative;
+}
+
+.nav-elem > img {
+    max-height: 1.5em;
+    vertical-align: middle;
+}
+
+.nav-link {
+    font-size: 12px;
+    margin: auto 1em auto 1em;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.email-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-elem {
+    text-align: center;
+    margin: 0.75em auto 0.75em auto;
+}
+
+.inp-text {
+    width: 25em;
+    height: 1.5em;
+}
+
+#submit {
+    border: none;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.section-perks {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em auto 2em auto;
+    flex-wrap: wrap;
+}
+
+.perk {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desc {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: inherit;
+    text-align: center;
+}
+
+.perk > img {
+    max-height: 4em;
+    margin: 1em 2em auto 1em;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.vid-container {
+    overflow: hidden;
+}
+
+.video {
+    width: 435px;
+    height: 255px;
+    border: 0;
+}
+
+@media all and (max-width: 424px) {
+    #nav-bar {
+        font-size: 11px;
+        flex-direction: column;
+    }
+
+    .nav-elem {
+        margin: 0.75em auto 0.75em auto;
+    }
+
+    .perk > img {
+        max-height: 0;
+        margin: 0;
+    }
+
+    .main-content {
+        margin-top: 4em;
+    }
+}
+
+@media all and (max-width: 666px) {
+    .video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (min-width: 955px) {
+    .video {
+        width: 645px;
+        height: 340px;
+    }
+}
